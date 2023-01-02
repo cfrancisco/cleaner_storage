@@ -1,0 +1,60 @@
+{
+    "env": {
+        "browser": true,
+        "jest": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "babel-eslint",
+    // Rule changes from Airbnb's eslint config
+    "rules": {
+        "prettier/prettier": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "warn",
+        "@typescript-eslint/no-var-requires": "warn",
+        "react/no-array-index-key": "warn",
+        "no-param-reassign": "warn",
+        "global-require": 0,
+        "no-underscore-dangle": 0,
+        "no-use-before-define": 0,
+        "no-console": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-filename-extension": 0,
+        "react/jsx-closing-bracket-location": 0,
+        "react/jsx-props-no-spreading": "off",
+        "import/no-unresolved": "off",
+        "comma-dangle": [
+            2,
+            "always-multiline"
+        ],
+        "arrow-parens": [
+            "warn",
+            "always"
+        ],
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": [
+                    "Link"
+                ],
+                "specialLink": [
+                    "to",
+                    "hrefLeft",
+                    "hrefRight"
+                ],
+                "aspects": [
+                    "noHref",
+                    "invalidHref",
+                    "preferButton"
+                ]
+            }
+        ]
+    }
+}
